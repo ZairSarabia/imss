@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMSS/Infonavit 2026</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora IMSS / Infonavit 2026</h1>
+    <p>Ingresa solo lo que sabes (salario diario y días). El sistema calcula automáticamente el tramo y porcentajes.</p>
+    
+    <button onclick="showModule('prima')">Prima de Riesgo</button>
+    <button onclick="showModule('cuotas')">Cuotas IMSS Mensuales</button>
+    <button onclick="showModule('infonavit')">Infonavit + RCV</button>
+
+    <div id="module-content" style="display:none; margin-top:20px;">
+        <h2 id="module-title"></h2>
+        <form id="calc-form"></form>
+        <button onclick="calcular()" style="margin-top:15px;">Calcular</button>
+        <div id="resultado" style="margin-top:20px; padding:15px; border:1px solid #ccc; background:#fff; border-radius:5px; white-space:pre-wrap;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
